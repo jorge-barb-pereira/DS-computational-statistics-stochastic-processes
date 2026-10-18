@@ -31,6 +31,8 @@ The default is **1,000 photons per batch** and four independent batches: **4,000
 
 ![Python transport example](assets/transport.png)
 
+The batch SEM panel shows the transverse **XY plane** at the central depth voxel; its title reports the voxel-center depth. The two energy panels show XZ and YZ planes.
+
 The maintained demo uses one central, forward beam. The original notebook's multi-source experiments remain in the historical directory. The small [walkthrough notebook](notebooks/transport_demo.ipynb) uses the maintained package; an optional Jupyter installation is required to open it interactively. Its code is also checked by `python tools/check_demo_notebook.py`.
 
 ## R quick start

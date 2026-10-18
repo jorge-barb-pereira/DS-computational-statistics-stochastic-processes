@@ -19,8 +19,11 @@ def plot_transport(result,length,destination):
     depth=(np.arange(mean.shape[2])+0.5)*length/mean.shape[2]
     axes[1,0].plot(depth,mean.sum(axis=(0,1)),color='#2563eb')
     axes[1,0].set(title='Depth profile (sum over transverse voxels)',xlabel='Depth (cm)',ylabel='MeV / primary / depth bin')
-    im=axes[1,1].imshow(sem[:,middle,:].T,origin='lower',extent=extent,aspect='equal',cmap='viridis')
-    axes[1,1].set(title=f"Batch SEM ({result['histories']} independent batches)",xlabel='Transverse distance (cm)',ylabel='Depth (cm)')
+    sem_depth_index = sem.shape[2]//2
+    sem_depth = (sem_depth_index+0.5)*length/sem.shape[2]
+    im=axes[1,1].imshow(sem[:,:,sem_depth_index].T,origin='lower',extent=extent,aspect='equal',cmap='viridis')
+    axes[1,1].set(title=f"Batch SEM: XY at z = {sem_depth:.2f} cm\n({result['histories']} independent batches)",
+                  xlabel='X (cm)',ylabel='Y (cm)')
     fig.colorbar(im,ax=axes[1,1],label='MeV / primary / voxel')
     fig.savefig(destination,dpi=130)
     plt.close(fig)

@@ -1,0 +1,24 @@
+{
+  "photons": 50000,
+  "seed": 20261019,
+  "mu_per_cm": 0.771,
+  "slab_length_cm": 2.0,
+  "bin_width_cm": 0.1,
+  "transient_states": 20,
+  "absorbing_states": [
+    "absorbed",
+    "transmitted"
+  ],
+  "exact_transmission": 0.21395276770062824,
+  "matrix_transmission": 0.21395276770062832,
+  "empirical_transmission": 0.21728,
+  "transmission_ci99_wilson": [
+    0.2125671144839987,
+    0.22206790827931736
+  ],
+  "exact_expected_steps": 10.593238609401496,
+  "empirical_expected_steps": 10.63768,
+  "matrix_row_sum_max_error": 0.0,
+  "absorbed": 39136,
+  "transmitted": 10864
+}

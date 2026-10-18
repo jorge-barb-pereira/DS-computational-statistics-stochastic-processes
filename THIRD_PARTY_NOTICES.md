@@ -6,4 +6,4 @@ The original notebook's coefficient tables have no verified external source cita
 
 Reports, presentation slides, ZIP archives, notebook checkpoints and original embedded figures/interactive output are excluded. The preview images are generated from maintained code using synthetic simulations. No external experimental dataset is bundled.
 
-NumPy and Matplotlib are dependencies installed separately under their own licenses. The historical notebook additionally imports SciPy and Plotly; historical R scripts import ggplot2. These dependencies are not vendored. Maintained R code uses base R. Publishing this academic portfolio implies no institutional endorsement or validation of its physical model.
+NumPy, Matplotlib and SciPy are dependencies installed separately under their own licenses. The historical notebook additionally imports Plotly; historical R scripts import ggplot2. These dependencies are not vendored. Maintained R code uses base R. Publishing this academic portfolio implies no institutional endorsement or validation of its physical model.

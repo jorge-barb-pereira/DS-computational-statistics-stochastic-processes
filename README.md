@@ -12,6 +12,7 @@ An academic programming portfolio exploring photon attenuation, bootstrap infere
 | Bootstrap inference | Basic confidence intervals for mean, median and 95th percentile | Resampling observed, binned interaction depths; clearly defined conditional target |
 | Three-dimensional photon transport | Exponential free paths, photoelectric absorption, Compton scattering | Python package with normalized directions, bounded demo and energy ledger |
 | Monte Carlo uncertainty | Independent batches and standard error of the mean | Streaming voxelwise statistics without retaining all history grids |
+| Convergence and Markov chains | Sampling-rate experiments and exact absorbing-chain solutions | Independent transport batches, analytic transmission benchmark and first-passage study |
 
 ## Python quick start
 
@@ -32,6 +33,20 @@ The default is **1,000 photons per batch** and four independent batches: **4,000
 ![Python transport example](assets/transport.png)
 
 The batch SEM panel shows the transverse **XY plane** at the central depth voxel; its title reports the voxel-center depth. The two energy panels show XZ and YZ planes.
+
+## Convergence and Markov-chain studies
+
+```bash
+python -m stochastic_photons.studies
+```
+
+The convergence study compares 100, 300, 1,000 and 3,000 photons per batch, with 24 independent batches at each setting. It measures transport-estimator dispersion and checks a separate transmission benchmark against its exact binomial RMSE. The absorbing-chain study compares 50,000 simulated slab paths with exact terminal probabilities and mean termination steps.
+
+See the [study design, assumptions and interpretation](docs/STUDIES.md) and [recorded results](docs/STUDY_RESULTS.md). These address sampling convergence and a simplified chain; physical model validation remains separate.
+
+![Convergence study](assets/convergence.png)
+
+![Absorbing Markov-chain study](assets/markov.png)
 
 The maintained demo uses one central, forward beam. The original notebook's multi-source experiments remain in the historical directory. The small [walkthrough notebook](notebooks/transport_demo.ipynb) uses the maintained package; an optional Jupyter installation is required to open it interactively. Its code is also checked by `python tools/check_demo_notebook.py`.
 

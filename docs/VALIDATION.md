@@ -32,4 +32,10 @@ On Windows with Python 3.12.14, all nine tests, the maintained notebook and the 
 
 Reproduction commands are in the README.
 
+## Convergence and Markov additions: 18 October 2026
+
+The expanded Python suite has **16 passing tests** locally, including absorbing-chain identities, first-passage moments, simulated terminal counts, Wilson reference values and the analytic binomial RMSE scaling. Both the small integration command and the full study ran successfully. The historical source audit still passes.
+
+The full design uses 105,600 3D transport primaries and 50,000 independent slab-chain paths. Parameters, actual results, interpretation and limitations are recorded in [study results](STUDY_RESULTS.md). CI runs the 16-test suite and the small study on Python 3.11 and 3.12; the full study is a separate reproducible experiment. The existing R checks remain part of the workflow.
+
 These checks establish implementation behavior and bookkeeping. They do not validate material data, prove distributional coverage of bootstrap intervals or establish transport accuracy against a benchmark.

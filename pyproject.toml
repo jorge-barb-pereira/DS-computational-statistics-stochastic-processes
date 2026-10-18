@@ -7,10 +7,11 @@ name = "computational-statistics-stochastic-processes"
 version = "0.1.0"
 description = "R attenuation/bootstrap statistics and Python Monte Carlo photon transport"
 requires-python = ">=3.11"
-dependencies = ["numpy>=1.26,<3", "matplotlib>=3.8,<4"]
+dependencies = ["numpy>=1.26,<3", "matplotlib>=3.8,<4", "scipy>=1.11,<2"]
 
 [project.scripts]
 stochastic-photons = "stochastic_photons.cli:main"
+stochastic-studies = "stochastic_photons.studies:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

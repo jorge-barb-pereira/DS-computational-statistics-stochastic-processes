@@ -21,6 +21,7 @@ jobs:
       - run: python tools/audit_repository.py
       - run: python -m stochastic_photons --histories 4 --photons 1000
       - run: python tools/check_demo_notebook.py
+      - run: python -m stochastic_photons.studies --quick
   r:
     runs-on: ubuntu-latest
     steps:

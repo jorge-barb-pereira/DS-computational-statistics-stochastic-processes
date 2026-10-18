@@ -1,0 +1,21 @@
+{
+  "material": "legacy-water",
+  "seed": 20261018,
+  "replicates": 24,
+  "sd_log_log_slope": -0.5422923356051508,
+  "grid_size": 12,
+  "ci_method": "Student t interval across independent batch means; approximate normality",
+  "total_transport_photons": 105600,
+  "transport_parameters": {
+    "source_energy_mev": 1.0,
+    "box_length_cm": 10.0,
+    "cutoff_mev": 0.05,
+    "max_interactions": 200
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.18.1",
+    "matplotlib": "3.10.9"
+  }
+}

@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "computational-statistics-stochastic-processes"
+version = "0.1.0"
+description = "R attenuation/bootstrap statistics and Python Monte Carlo photon transport"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.26,<3", "matplotlib>=3.8,<4"]
+
+[project.scripts]
+stochastic-photons = "stochastic_photons.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

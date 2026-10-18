@@ -1,0 +1,63 @@
+{
+  "imported_on": "2026-10-18",
+  "files": [
+    {
+      "original_path": "Projeto/Script.R",
+      "published_path": "historical/r/Script.R",
+      "sha256": "e2f500298228cdc4d3ca54b8f88dc7aca4cfddc5eb854dd5dc6d73e10604d19a",
+      "transformation": "verbatim byte copy",
+      "filesystem_modified_utc": "2023-11-10T13:17:28+00:00"
+    },
+    {
+      "original_path": "Projeto/Script (1).R",
+      "published_path": "historical/r/Script (1).R",
+      "sha256": "fd127e40377e673b11cb36478022c8d797e9a5796a64351f1d3b101528e32bae",
+      "transformation": "verbatim byte copy",
+      "filesystem_modified_utc": "2023-11-13T13:23:11+00:00"
+    },
+    {
+      "original_path": "Projeto/Script 4 .R",
+      "published_path": "historical/r/Script 4 .R",
+      "sha256": "ff319dcf92194533cb62644a8f6d3aa8111ea929f29fc715e8b1d63b32a92c8e",
+      "transformation": "verbatim byte copy",
+      "filesystem_modified_utc": "2023-11-15T13:50:29+00:00"
+    },
+    {
+      "original_path": "Projeto/Script_Final.R",
+      "published_path": "historical/r/Script_Final.R",
+      "sha256": "b3c3d66314beed4b2c5921d10974c71ca30b602fc63ce34d9d45897bb2bdb419",
+      "transformation": "verbatim byte copy",
+      "filesystem_modified_utc": "2023-11-15T21:32:09+00:00"
+    },
+    {
+      "original_path": "PEA/MC-PS.ipynb",
+      "published_path": "historical/python/MC-PS.ipynb",
+      "original_sha256": "c4bfd6bbed0e9c96cf1278b259ef8734b4029aaf3047487d2e77d9223ae4a3fc",
+      "original_bytes": 75304287,
+      "code_cell_source_sha256": [
+        "575d710b905d98b0c21de5cd0549b121c5f1daf3da9d2784844009fcab811042",
+        "bf76af44e2bd4e4c1688cfa9942d77705418e552d727b741ca966500acf52bea",
+        "73f438412681badaf3c50dd2e0e807b9f2b20901f92fc9267a4d2667ad49059f",
+        "891a8d7866d3465e9d59af2693644241a7acbf8ea7a39b5c961264989e4a13ab",
+        "24d5917ca44c7dbf53288396599af5696d2e1dcfbb9b60b30b4c4d093d1eb120",
+        "c4376d9f37e01ec0501f7fd4865cda7edab8d3d59d75aac12cec4091548bea60",
+        "5ede2a2a723338c48df811acb421f2b8faf9f76d34901b5c20607e3edde9aa25",
+        "3c3287af3f7d0b09701adb4acc1ac50842b0220da47ee1c5f7521b2e97856d57",
+        "5b93c1f251e471234a3f1896ad9806f3c5da7a40cdc1fef844a576ca2fff17b3",
+        "e0300bc0ecb7edd447d456853debce345a57bcb04bfa89f57c101c99d73e6892",
+        "133e22876c9e42388048bb25c3864590949db6ce67da7b9a9abc831f62aea2b0",
+        "c1a767eab71133c316a4f6e7cc623b3c74bc5e59913beb73d2d32784a676d68f",
+        "260cba8c6c9aa7f61f855a71170ce3f194dd9998f36f1094a33b3463feb8e716",
+        "8e040bd85068db3a8fdd01313c307fb796c744268e87c76449149a0ce570b5e0",
+        "92c6017c927c74edd07e3b6053ae5971896b8e5b449ffa329b6d87de8e2860c4",
+        "b32595d731a633382adaafbf89f440d200dd30bc6a481679dfffb84f6473b9a9",
+        "f0f14edc5566283634b201ed4ed5f59147880355a2a165f43e3108fb0279599a",
+        "b1561dc80f26a71d0314450188d040d4036647d95256461fec8cbd4e2236da92",
+        "5ede2a2a723338c48df811acb421f2b8faf9f76d34901b5c20607e3edde9aa25"
+      ],
+      "filesystem_modified_utc": "2026-09-23T18:07:10.938853+00:00",
+      "development_date": "Unknown; filesystem timestamp alone is not proof of authorship date",
+      "transformation": "Code sources unchanged; outputs and execution metadata removed; warning added"
+    }
+  ]
+}

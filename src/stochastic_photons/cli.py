@@ -9,7 +9,7 @@ from .transport import MATERIALS, simulate_ensemble
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--histories', type=int, default=4)
-    parser.add_argument('--photons', type=int, default=300)
+    parser.add_argument('--photons', type=int, default=1000)
     parser.add_argument('--grid-size', type=int, default=24)
     parser.add_argument('--length', type=float, default=10)
     parser.add_argument('--material', choices=MATERIALS, default='legacy-lead')

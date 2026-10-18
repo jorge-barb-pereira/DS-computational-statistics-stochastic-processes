@@ -19,7 +19,7 @@ jobs:
       - run: python -m pip install -e .
       - run: python -m unittest discover -s tests -v
       - run: python tools/audit_repository.py
-      - run: python -m stochastic_photons --histories 4 --photons 300
+      - run: python -m stochastic_photons --histories 4 --photons 1000
       - run: python tools/check_demo_notebook.py
   r:
     runs-on: ubuntu-latest

@@ -95,7 +95,7 @@ def voxel_index(position, length, shape):
     return tuple(np.floor(position/length*np.asarray(shape)).astype(int))
 
 
-def simulate_batch(photons=300, grid_size=24, length=10.0, material='legacy-lead',
+def simulate_batch(photons=1000, grid_size=24, length=10.0, material='legacy-lead',
                    energy=1.0, cutoff=0.05, seed=42, max_interactions=200):
     positive_integer(photons, 'photons')
     positive_integer(grid_size, 'grid_size', 2)
@@ -144,7 +144,7 @@ def simulate_batch(photons=300, grid_size=24, length=10.0, material='legacy-lead
             'cutoff_deposited_mev': cutoff_deposited}
 
 
-def simulate_ensemble(histories=4, photons=300, seed=42, **kwargs):
+def simulate_ensemble(histories=4, photons=1000, seed=42, **kwargs):
     """Streaming batch means and SEM; memory does not grow with history count."""
     positive_integer(histories, 'histories', 2)
     positive_integer(photons, 'photons')

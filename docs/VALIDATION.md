@@ -22,8 +22,14 @@ The maintained implementation is checked separately from the historical sources.
 
 R was not installed in the local Windows environment; its verification was performed by the real R interpreter in CI. The local Python CLI run used four batches of 300 primaries, seed 42 and a 24-cubed grid. Mean deposited energy was approximately **0.998743 MeV per primary**, with zero unresolved energy in those batches. These numbers describe that seeded educational example only.
 
-`assets/transport.png` comes from that local Python run. `assets/attenuation.png` is the actual R-generated figure retrieved from the successful CI run. Both images were visually inspected. The original 75,304,287-byte notebook becomes a 41,130-byte source-only notebook, retaining all 19 code-cell source hashes.
+`assets/attenuation.png` is the actual R-generated figure retrieved from the successful CI run. The original 75,304,287-byte notebook becomes a 41,130-byte source-only notebook, retaining all 19 code-cell source hashes.
 
-Reproduction commands are in the README. The final preview and validation update changes documentation and assets only.
+## Increased photon count: 18 October 2026
+
+The maintained Python API, CLI and CI demo now default to **1,000 primaries per batch**. Four default batches simulate **4,000 photons total**. The walkthrough notebook also uses 1,000 photons per batch, with its existing three batches. Historical sources and the R demonstration's existing 1,000 photons are unchanged.
+
+On Windows with Python 3.12.14, all nine tests, the maintained notebook and the historical integrity audit passed. The regenerated default demo (seed 42, 24-cubed grid) yielded **0.998699 MeV deposited per primary**, with zero unresolved energy and a conserved energy ledger in every batch. `assets/transport.png` is generated from this 4,000-photon run and was visually inspected. Increasing the sample size reduces Monte Carlo sampling noise in expectation; the four-batch SEM remains an estimate rather than proof of convergence.
+
+Reproduction commands are in the README.
 
 These checks establish implementation behavior and bookkeeping. They do not validate material data, prove distributional coverage of bootstrap intervals or establish transport accuracy against a benchmark.

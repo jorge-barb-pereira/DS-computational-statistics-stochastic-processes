@@ -22,12 +22,12 @@ python -m venv .venv
 # Linux/macOS: source .venv/bin/activate
 # Windows PowerShell: .venv\Scripts\Activate.ps1
 python -m pip install -e .
-python -m stochastic_photons --histories 4 --photons 300 --grid-size 24
+python -m stochastic_photons --histories 4 --photons 1000 --grid-size 24
 python -m unittest discover -s tests -v
 python tools/audit_repository.py
 ```
 
-The command writes a PNG, a compressed NumPy archive and a JSON energy ledger to `output/python/`. Seeds reproduce runs within the same numerical environment; exact cross-version random streams are not promised. For a water-like legacy table, add `--material legacy-water`. Run `python -m stochastic_photons --help` for options.
+The default is **1,000 photons per batch** and four independent batches: **4,000 photons total**. The command writes a PNG, a compressed NumPy archive and a JSON energy ledger to `output/python/`. Seeds reproduce runs within the same numerical environment; exact cross-version random streams are not promised. For a water-like legacy table, add `--material legacy-water`. Run `python -m stochastic_photons --help` for options.
 
 ![Python transport example](assets/transport.png)
 
